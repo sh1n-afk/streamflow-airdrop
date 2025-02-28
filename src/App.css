@@ -1,0 +1,197 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.wallet-section {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+}
+
+.balance {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #4CAF50;
+}
+
+.airdrop-section {
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+}
+
+/* Style the Wallet Multi Button */
+.wallet-adapter-button {
+  margin: 0 auto;
+  height: 48px !important;
+  padding: 0 24px !important;
+  font-size: 16px !important;
+  background-color: #512da8 !important;
+  border-radius: 8px !important;
+}
+
+.wallet-adapter-button:hover {
+  background-color: #673ab7 !important;
+}
+
+/* Add these new styles to your existing App.css */
+.airdrop-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.airdrop-section input {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+  color: white;
+  font-size: 16px;
+}
+
+.airdrop-section button {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background: #512da8;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.airdrop-section button:hover:not(:disabled) {
+  background: #673ab7;
+}
+
+.airdrop-section button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.error {
+  color: #ff4444;
+  margin-top: 1rem;
+}
+
+/* Add these new styles */
+.success {
+  color: #4CAF50;
+  margin-top: 1rem;
+}
+
+.loading-spinner {
+  display: inline-block;
+  position: relative;
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+
+.transaction-history {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+}
+
+.transaction {
+  padding: 1rem;
+  margin: 0.5rem 0;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.transaction.success {
+  border-left: 4px solid #4CAF50;
+}
+
+.transaction.failed {
+  border-left: 4px solid #ff4444;
+}
+
+.tx-details, .tx-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.status {
+  font-size: 0.875rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  text-transform: capitalize;
+}
+
+.transaction.success .status {
+  background: rgba(76, 175, 80, 0.1);
+  color: #4CAF50;
+}
+
+.transaction.failed .status {
+  background: rgba(255, 68, 68, 0.1);
+  color: #ff4444;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.button-group button {
+  flex: 1;
+}
